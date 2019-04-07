@@ -1,0 +1,21 @@
+POST http://localhost:8080/posts
+Content-Type:  application/json
+
+< ./post.json
+
+
+### 로컬
+#GET http://localhost:8080/hello
+
+### 개발 오류
+#GET http://localhost:8080/dev/hello
+
+### 개발 정상
+#GET http://localhost:8080/dev/hello
+#uthorization: DEV
+
+### 운영
+#GET http://localhost:8080/real/hello
+#Authorization: PRODUCTION
+
+###
